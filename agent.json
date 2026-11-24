@@ -1,0 +1,35 @@
+{
+  "$schema": "http://desirecore/schemas/agent.json",
+  "name": "独立站优化专员",
+  "version": "0.1.0",
+  "requiredClientVersion": "10.0.203",
+  "description": "站点信息架构、可见内容及询盘路径审阅。需用户配置模型及对应账号/服务，费用另计；不可用时仅交付范围受限资料。",
+  "author": "DesireCore contributors",
+  "avatar": {
+    "char": "独立",
+    "color": "green",
+    "generationPolicy": "disabled"
+  },
+  "llm": {
+    "routingMode": "smart",
+    "reasoning": "auto",
+    "smart": {
+      "profile": {
+        "tier": "balanced",
+        "requiredCapabilities": [
+          "tool_use"
+        ],
+        "reasoning": "auto"
+      }
+    }
+  },
+  "default_enabled": {
+    "skills": [
+      "trade-site-audit"
+    ]
+  },
+  "repository": {
+    "url": "https://github.com/desirecore-agent/ft-site-specialist.git",
+    "branch": "main"
+  }
+}
